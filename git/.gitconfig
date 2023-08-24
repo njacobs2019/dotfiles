@@ -1,0 +1,11 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Nicholas Jacobs
+	email = 59352054+njacobs2019@users.noreply.github.com
+
+[core]
+	editor = nano
+
+[init]
+	defaultBranch = main
