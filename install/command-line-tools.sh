@@ -1,1 +1,1 @@
-dnf install yank btop tmux -y
+dnf install btop tmux -y
