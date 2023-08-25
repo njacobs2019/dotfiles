@@ -30,3 +30,8 @@ gsettings set org.gnome.shell.extensions.dash-to-dock dock-position "LEFT"
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed true
 gsettings set org.gnome.shell.extensions.dash-to-dock disable-overview-on-startup true
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action "focus-minimize-or-previews"
+
+# Gnome extension connector
+sudo dnf install gnome-browser-connector
+sudo dnf install gnome-shell-extension-blur-my-shell
+sudo dnf install gnome-pomodoro
