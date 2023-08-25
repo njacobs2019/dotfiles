@@ -16,6 +16,8 @@ gsettings set org.gnome.desktop.wm.preferences focus-mode "sloppy"
 gsettings set org.gnome.desktop.wm.keybindings close "['<Super>q']"
 gsettings set org.gnome.shell.keybindings show-screenshot-ui "['<Shift><Super>s']"
 
+# Text Editor Settings
+gsettings set org.gnome.TextEditor restore-session false
 
 
 # dash to dock settings

@@ -15,10 +15,23 @@ This repo contains dotfiles for configuration and configuration and installation
 ## SSH keys
 Place them in `~/.ssh` and call it key
 
+## LibreOffice
+**/home/nick/.config/libreoffice**
+- Tab interface
+  - "View" --> "User Interface" --> "Tabbed"
+- Icons
+  - "Main Menu" --> "LibreOffice" --> "View" --> "Theme"
+    - Colibre or Sukapura (most like MS Office)
+    - Elementary (like Gnome)
+    - Sifr (symbolic)
+
+
+
 
 # TODO
 - Install zoom: https://zoom.us/download?os=linux
 - configure libreoffice
-- nvidia divers
+- Nvidia divers
   - https://itsfoss.com/install-nvidia-drivers-fedora/
 - terminal theme
+- https://www.debugpoint.com/fractional-scaling-fedora/
