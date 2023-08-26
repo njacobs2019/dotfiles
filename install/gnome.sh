@@ -3,12 +3,10 @@
 sudo dnf install gnome-tweaks  # rpm from Fedora repo
 flatpak install org.gnome.Extensions # from Fedora repo
 # dnf info gnome-extensions-app # alternative
+sudo dnf install dconf-editor -y
 
-dnf install dconf-editor -y
-
-# Install dash to dock from fedora repo
-sudo dnf install gnome-shell-extension-dash-to-dock
-
+# Install dash-to-dock from Fedora repo
+sudo dnf install gnome-shell-extension-dash-to-dock -y
 
 # gnome settings
 gsettings set org.gnome.desktop.wm.preferences action-double-click-titlebar "minimize"

@@ -8,9 +8,12 @@ This repo contains dotfiles for configuration and configuration and installation
 
 # Manual setup
 - Create ssh keys
+ - `ssh-keygen -t ed25519 -a KDF_ROUNDS`
+ - Call it `key`
 - Configure Joplin
 - Log into Chrome, Spotify, and Slack
 - Set keyboard shortcut for terminal
+
 
 ## SSH keys
 Place them in `~/.ssh` and call it key

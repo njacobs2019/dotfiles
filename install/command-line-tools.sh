@@ -1,1 +1,1 @@
-dnf install btop tmux -y
+sudo dnf install btop tmux -y
