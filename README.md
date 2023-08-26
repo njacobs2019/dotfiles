@@ -13,6 +13,8 @@ This repo contains dotfiles for configuration and configuration and installation
 - Configure Joplin
 - Log into Chrome, Spotify, and Slack
 - Set keyboard shortcut for terminal
+  - Command: `gnome-terminal`
+  - Shortcut: `ctrl-alt-t`
 
 
 ## SSH keys
@@ -27,8 +29,7 @@ Place them in `~/.ssh` and call it key
     - Colibre or Sukapura (most like MS Office)
     - Elementary (like Gnome)
     - Sifr (symbolic)
-
-
+- FONTS...
 
 
 # TODO
