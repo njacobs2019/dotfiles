@@ -35,7 +35,5 @@ Place them in `~/.ssh` and call it key
 # TODO
 - Install zoom: https://zoom.us/download?os=linux
 - configure libreoffice
-- Nvidia divers
-  - https://itsfoss.com/install-nvidia-drivers-fedora/
 - terminal theme
 - https://www.debugpoint.com/fractional-scaling-fedora/

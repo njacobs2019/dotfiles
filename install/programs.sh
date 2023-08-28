@@ -4,7 +4,7 @@ dnf install google-chrome-stable -y
 flatpak install flathub net.cozic.joplin_desktop -y
 flatpak install flathub com.slack.Slack -y
 flatpak install com.spotify.Client -y
-flatpak install flathub us.zoom.Zoom -y
+flatpak install fedora com.github.tchx84.Flatseal
 
 # Setup VS-Code
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
