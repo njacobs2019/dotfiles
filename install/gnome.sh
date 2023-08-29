@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo dnf install gnome-tweaks  # rpm from Fedora repo
-flatpak install org.gnome.Extensions # from Fedora repo
+flatpak install fedora org.gnome.Extensions # from Fedora repo
 # dnf info gnome-extensions-app # alternative
 sudo dnf install dconf-editor -y
 
@@ -32,6 +32,6 @@ gsettings set org.gnome.shell.extensions.dash-to-dock disable-overview-on-startu
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action "focus-minimize-or-previews"
 
 # Gnome extension connector
-sudo dnf install gnome-browser-connector
-sudo dnf install gnome-shell-extension-blur-my-shell
-sudo dnf install gnome-pomodoro
+sudo dnf install gnome-browser-connector -y
+sudo dnf install gnome-shell-extension-blur-my-shell -y
+sudo dnf install gnome-pomodoro -y
