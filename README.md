@@ -31,6 +31,11 @@ Place them in `~/.ssh` and call it key
     - Sifr (symbolic)
 - FONTS...
 
+## PIA VPN:
+1. Download OVPN profile:  https://helpdesk.privateinternetaccess.com/kb/articles/where-can-i-find-your-ovpn-files
+2. Setup
+3. Set a given wifi to auto connect to vpn with `nm-connector-editor`
+
 
 # TODO
 - Install zoom: https://zoom.us/download?os=linux
