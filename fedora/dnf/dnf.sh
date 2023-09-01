@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Symlink the config file
-dnf_config="/etc/dnf/dnf.conf"
+dnf_config="/etc/fedora/dnf/dnf.conf"
 sudo rm $dnf_config
 sudo ln -s $DOTFILES/dnf/dnf.conf $dnf_config
 

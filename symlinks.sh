@@ -14,7 +14,7 @@ create_links(){
   for file in $DOTFILES/$start/*; do
     echo "Linking $file"
     target_file=$(basename "$file")
-    ln -sf "$file" $destination
+    sudo ln -sf "$file" $destination
   done
 }
 
@@ -31,3 +31,8 @@ create_links bash ~/
 # Git
 echo "**********Linking git files**********"
 create_links git ~/
+
+# Desktop backgrounds
+echo "**********Linking desktop backgrounds files**********"
+create_links desktop_images /usr/share/backgrounds
+
