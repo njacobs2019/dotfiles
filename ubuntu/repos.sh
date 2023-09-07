@@ -1,9 +1,13 @@
 #!/bin/bash
 
 # This script adds additional repos
+# Reference:  https://www.digitalocean.com/community/tutorials/how-to-handle-apt-key-and-add-apt-repository-deprecation-using-gpg-to-add-external-repositories-on-ubuntu-22-04
 
 # Dependencies for installation:
 sudo apt install curl gpg wget -y
+
+# Make sure the gpg folder exists
+sudo mkdir -p --mode=0755 /usr/share/keyrings
 
 # Add Google Repo
 echo "*****Adding Google Repo*****"
@@ -19,6 +23,12 @@ echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https:
 echo "*****Adding Spotify Repo*****"
 curl -fsSL https://download.spotify.com/debian/pubkey_7A3A762FAFD4A51F.gpg | sudo gpg --dearmor -o /etc/apt/keyrings/packages.spotify.gpg
 echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/packages.spotify.gpg] http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list > /dev/null
+
+# Add Cloudflare repo
+echo "*****Adding Cloudflare Repo*****"
+curl -fsSL https://pkg.cloudflare.com/cloudflare-main.gpg | sudo tee /etc/apt/keyrings/packages.cloudflare.gpg >/dev/null
+echo 'deb [signed-by=/etc/apt/keyrings/packages.cloudflare.gpg] https://pkg.cloudflare.com/cloudflared jammy main' | sudo tee /etc/apt/sources.list.d/cloudflared.list
+
 
 # Update Repo caches
 echo "*****Updating Repo caches*****"
