@@ -25,3 +25,12 @@ if [ -d ~/.bashrc.d ]; then
 fi
 
 unset rc
+
+# Start Starship
+eval "$(starship init bash)"
+
+# Run neofetch
+# neofetch
+
+# Set colors for ls
+alias ls='ls --color=auto'

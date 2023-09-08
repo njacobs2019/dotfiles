@@ -33,6 +33,5 @@ echo "**********Linking git files**********"
 create_links git ~/
 
 # Desktop backgrounds
-echo "**********Linking desktop backgrounds files**********"
-create_links desktop_images /usr/share/backgrounds
-
+echo "**********Linking .config files**********"
+create_links config ~/.config
