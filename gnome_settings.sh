@@ -8,6 +8,7 @@ gsettings set org.gnome.desktop.wm.keybindings close "['<Super>q']"
 gsettings set org.gnome.desktop.background picture-uri "/usr/share/backgrounds/Optical_Fibers_in_Dark_by_Elena_Stravoravdi.jpg"
 gsettings set org.gnome.shell.keybindings show-screenshot-ui "['<Shift><Super>s']"
 gsettings set org.gnome.shell.extensions.ding show-home false
+gsettings set org.gnome.shell.extensions.ding start-corner "top-left"
 
 # dash to dock settings
 gsettings set org.gnome.shell.extensions.dash-to-dock show-show-apps-button false
