@@ -1,6 +1,13 @@
 # DOTFILES
 This repo contains dotfiles for configuration and configuration and installation scripts for setting up a new computer running Fedora 38 and GNOME 44 and keeping it in sync with other computers.
 
+
+# Initial Ubuntu Setup
+- Run symlinks
+run gnome_settings.sh
+
+
+
 # Initial setup
 - Run the dnf setup script
 - Run `symlinks.sh` to establish the symbolic links
