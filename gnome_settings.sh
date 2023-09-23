@@ -1,14 +1,17 @@
 #!/bin/bash
 
+# Sets GNOME Settings (designed for GNOME 42.9 on Wayland)
+
 # gnome settings
 gsettings set org.gnome.desktop.wm.preferences action-double-click-titlebar "minimize"
-gsettings set org.gnome.desktop.wm.preferences focus-mode "click"
+gsettings set org.gnome.desktop.wm.preferences focus-mode "mouse"
 gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,close"
 gsettings set org.gnome.desktop.wm.keybindings close "['<Super>q']"
 gsettings set org.gnome.desktop.background picture-uri "/home/nick/dotfiles/desktop_images/Optical_Fibers_in_Dark_by_Elena_Stravoravdi.jpeg"
 gsettings set org.gnome.shell.keybindings show-screenshot-ui "['<Shift><Super>s']"
 gsettings set org.gnome.shell.extensions.ding show-home false
 gsettings set org.gnome.shell.extensions.ding start-corner "top-left"
+gsettings set org.gnome.shell.overrides workspaces-only-on-primary false
 
 # Gnome terminal settings
 PROFILE_ID=$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d "'")
