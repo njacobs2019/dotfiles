@@ -1,31 +1,33 @@
 # DOTFILES
-This repo contains dotfiles for configuration and configuration and installation scripts for setting up a new computer running Fedora 38 and GNOME 44 and keeping it in sync with other computers.
-
-
-# Initial Ubuntu Setup
-- Run symlinks
-run gnome_settings.sh
-
-
+This repo contains dotfiles for configuration and configuration and installation scripts for setting up a new computer running Ubuntu 22.04 LTS and keeping it in sync with other computers.
 
 # Initial setup
-- Run the dnf setup script
 - Run `symlinks.sh` to establish the symbolic links
-- Run desired scripts in `./install`
+- Run:
+  - `./gnome_settings.sh`
+  - `./starship.sh`
+  - `./ubuntu/repos.sh`
+  - `./ubuntu/flatpak.sh`
+  - `./ubuntu/programs.sh`
+- Install other programs
+  - `./ubuntu/other_programs/slack.sh`
+  - `./ubuntu/other_programs/zoom.sh`
+- Optional installations
+  - `./ubuntu/programs_personal.sh`
+  - `./ubuntu/laptop.sh`
 
 # Manual setup
 - Create ssh keys
- - `ssh-keygen -t ed25519 -a KDF_ROUNDS -f key`
+ - `ssh-keygen -t ed25519 -f ~/.ssh/key -a KDF_ROUNDS `
  - Call it `key`
 - Configure Joplin
 - Log into Chrome, Spotify, and Slack
-- Set keyboard shortcut for terminal
-  - Command: `gnome-terminal`
-  - Shortcut: `ctrl-alt-t`
 
-
-## SSH keys
-Place them in `~/.ssh` and call it key
+## Setup UFW
+```bash
+sudo ufw status
+sudo ufw enable
+```
 
 ## LibreOffice
 **/home/nick/.config/libreoffice**
@@ -43,9 +45,9 @@ Place them in `~/.ssh` and call it key
 2. Setup
 3. Set a given wifi to auto connect to vpn with `nm-connection-editor`
 
+# References
+
+
 
 # TODO
-- Install zoom: https://zoom.us/download?os=linux
 - configure libreoffice
-- terminal theme
-- https://www.debugpoint.com/fractional-scaling-fedora/
