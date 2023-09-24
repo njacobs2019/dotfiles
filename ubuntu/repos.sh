@@ -27,10 +27,16 @@ echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/packages.spotify.gpg] http://r
 # Add Cloudflare repo
 echo "*****Adding Cloudflare Repo*****"
 curl -fsSL https://pkg.cloudflare.com/cloudflare-main.gpg | sudo tee /etc/apt/keyrings/packages.cloudflare.gpg >/dev/null
-echo 'deb [signed-by=/etc/apt/keyrings/packages.cloudflare.gpg] https://pkg.cloudflare.com/cloudflared jammy main' | sudo tee /etc/apt/sources.list.d/cloudflared.list
+echo 'deb [arch=amd64 signed-by=/etc/apt/keyrings/packages.cloudflare.gpg] https://pkg.cloudflare.com/cloudflared jammy main' | sudo tee /etc/apt/sources.list.d/cloudflared.list
 
+# Add Cryptomator PPA
+echo "*****Cryptomator PPA*****"
+sudo add-apt-repository ppa:sebastian-stenzel/cryptomator -y
+
+# Add NextCloud Client PPA
+echo "*****NextCloud Client PPA*****"
+sudo add-apt-repository ppa:nextcloud-devs/client -y
 
 # Update Repo caches
 echo "*****Updating Repo caches*****"
 sudo apt update
-
