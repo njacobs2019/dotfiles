@@ -38,16 +38,22 @@ sudo ufw enable
     - Colibre or Sukapura (most like MS Office)
     - Elementary (like Gnome)
     - Sifr (symbolic)
-- FONTS...
+- FONTS
+  - Setting a default font
+    - "Main Menu" --> "Options" --> "LibreOffice Writer" --> "Basic Fonts"
+- Office Compatability
+  - "Main Menu" --> "Options" --> "Load/save" --> "Microsoft Office" --> Check all boxes
+  - "Main Menu" --> "Options" --> "LibreOffice Writer" --> "Compatibility"
+    - Select "Reorganize Form menu for Microsoft Compatibility"
+    - Select "Word-compatible trailing blanks"
+  - "Main Menu" --> "Options" --> "General"
+    - Change default file extensions to Microsoft (.docx, .xlsx, .pptx)
+    - Set setting for "Warn when not saving in ODF or default format"
+- Noteworthy Extensions
+  - Alternative Find & Replace for Writer (AltSearch)
+  - MultiSave
+  - Pepito Cleaner
 
 ## PIA VPN:
-1. Download OVPN profile:  https://helpdesk.privateinternetaccess.com/kb/articles/where-can-i-find-your-ovpn-files
-2. Setup
-3. Set a given wifi to auto connect to vpn with `nm-connection-editor`
-
-# References
-
-
-
-# TODO
-- configure libreoffice
+1. Go to https://www.privateinternetaccess.com/download/linux-vpn
+2. Download and run the installer
