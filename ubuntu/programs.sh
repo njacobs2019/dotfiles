@@ -14,6 +14,7 @@ sudo apt install nautilus-nextcloud -y
 sudo apt install google-chrome-stable -y
 flatpak install flathub net.cozic.joplin_desktop -y
 flatpak install flathub com.github.xournalpp.xournalpp -y
+flatpak install flathub com.github.jeromerobert.pdfarranger -y
 
 # Programming tools
 sudo apt install code -y
