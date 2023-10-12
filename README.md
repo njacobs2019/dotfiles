@@ -9,6 +9,7 @@ This repo contains dotfiles for configuration and configuration and installation
   - `./ubuntu/repos.sh`
   - `./ubuntu/flatpak.sh`
   - `./ubuntu/programs.sh`
+  - `./ubuntu/office.sh`
 - Install other programs
   - `./ubuntu/other_programs/slack.sh`
   - `./ubuntu/other_programs/zoom.sh`

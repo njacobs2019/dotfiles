@@ -7,7 +7,7 @@ gsettings set org.gnome.desktop.wm.preferences action-double-click-titlebar "min
 gsettings set org.gnome.desktop.wm.preferences focus-mode "mouse"
 gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,close"
 gsettings set org.gnome.desktop.wm.keybindings close "['<Super>q']"
-gsettings set org.gnome.desktop.background picture-uri "/home/nick/dotfiles/desktop_images/Optical_Fibers_in_Dark_by_Elena_Stravoravdi.jpeg"
+gsettings set org.gnome.desktop.background picture-uri file:///home/nick/dotfiles/desktop_images/Optical_Fibers_in_Dark_by_Elena_Stravoravdi.jpeg
 gsettings set org.gnome.shell.keybindings show-screenshot-ui "['<Shift><Super>s']"
 gsettings set org.gnome.shell.extensions.ding show-home false
 gsettings set org.gnome.shell.extensions.ding start-corner "top-left"
