@@ -27,7 +27,12 @@ echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/packages.spotify.gpg] http://r
 # Add Cloudflare repo
 echo "*****Adding Cloudflare Repo*****"
 curl -fsSL https://pkg.cloudflare.com/cloudflare-main.gpg | sudo tee /etc/apt/keyrings/packages.cloudflare.gpg >/dev/null
-echo 'deb [arch=amd64 signed-by=/etc/apt/keyrings/packages.cloudflare.gpg] https://pkg.cloudflare.com/cloudflared jammy main' | sudo tee /etc/apt/sources.list.d/cloudflared.list
+echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/packages.cloudflare.gpg] https://pkg.cloudflare.com/cloudflared jammy main" | sudo tee /etc/apt/sources.list.d/cloudflared.list
+
+# Add Brave repo
+echo "*****Adding Brave Repo*****"
+sudo curl -fsSL https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg | sudo tee /etc/apt/keyrings/packages.brave.gpg >/dev/null
+echo "deb [signed-by=/etc/apt/keyrings/packages.brave.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main" |sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 
 # Add Cryptomator PPA
 echo "*****Cryptomator PPA*****"

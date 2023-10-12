@@ -11,7 +11,7 @@ sudo apt install solaar spotify-client -y
 sudo apt install nautilus-nextcloud -y
 
 # Productivity tools
-sudo apt install google-chrome-stable -y
+sudo apt install brave-browser -y
 flatpak install flathub net.cozic.joplin_desktop -y
 flatpak install flathub com.github.xournalpp.xournalpp -y
 flatpak install flathub com.github.jeromerobert.pdfarranger -y
