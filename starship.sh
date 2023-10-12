@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo apt install curl
+
 # This installs the fonts and sets up starship
 
 # Install the FiraCode Nerd Font
