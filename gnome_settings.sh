@@ -4,7 +4,7 @@
 
 # gnome settings
 gsettings set org.gnome.desktop.wm.preferences action-double-click-titlebar "minimize"
-gsettings set org.gnome.desktop.wm.preferences focus-mode "mouse"
+gsettings set org.gnome.desktop.wm.preferences focus-mode "click"
 gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,close"
 gsettings set org.gnome.desktop.wm.keybindings close "['<Super>q']"
 gsettings set org.gnome.desktop.background picture-uri file:///home/nick/dotfiles/desktop_images/Optical_Fibers_in_Dark_by_Elena_Stravoravdi.jpeg
