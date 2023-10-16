@@ -32,7 +32,7 @@ echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/packages.cloudflare.gpg] https
 # Add Brave repo
 echo "*****Adding Brave Repo*****"
 sudo curl -fsSL https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg | sudo tee /etc/apt/keyrings/packages.brave.gpg >/dev/null
-echo "deb [signed-by=/etc/apt/keyrings/packages.brave.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main" |sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/packages.brave.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main" |sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 
 # Add Cryptomator PPA
 echo "*****Cryptomator PPA*****"
