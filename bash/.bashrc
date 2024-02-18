@@ -50,3 +50,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# Aliases
+alias sys_upgrade='~/dotfiles/sys_upgrade.sh'
