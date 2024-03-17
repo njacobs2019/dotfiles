@@ -21,7 +21,7 @@ print "FLATPAK UPDATE"
 flatpak update -y
 
 print "FLATPAK CLEAN"
-flatpak uninstall --unused
+flatpak uninstall --unused -y
 
 # SNAP
 print "SNAP REFRESH"
